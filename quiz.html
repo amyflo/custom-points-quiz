@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <style>
+      .likert li {
+        float: left;
+        list-style-type: none;
+        margin: 0px 3px;
+      }
+    </style>
+
+    <form>
+      <div class="quiz-question" value="3">
+        <p>Can it stimulate new ideas and services?</p>
+        <ul class="likert">
+          <li>1</li>
+          <li><input type="radio" name="q1" value="1" /></li>
+          <li><input type="radio" name="q1" value="2" /></li>
+          <li><input type="radio" name="q1" value="3" /></li>
+          <li>3</li>
+        </ul>
+      </div>
+      <br />
+
+      <div class="quiz-question" value="2">
+        <p>Additionally, is there a request for this dataset?</p>
+        <input type="radio" name="q2" value="1" />Yes<br />
+        <input type="radio" name="q2" value="3" />No<br />
+      </div>
+
+      <div class="quiz-question" value="3">
+        <p>Can it stimulate new ideas and services?</p>
+        <ul class="likert">
+          <li>1</li>
+          <li><input type="radio" name="q3" value="1" /></li>
+          <li><input type="radio" name="q3" value="2" /></li>
+          <li><input type="radio" name="q3" value="3" /></li>
+          <li>3</li>
+        </ul>
+      </div>
+
+      <br/>
+
+      <div class="quiz-question" value="2">
+        <p>
+          Does this data exist right now online (maybe in a different format)?
+          Does it have a purpose?
+        </p>
+        <input type="radio" name="q4" value="1" />Yes, data exists publicly in
+        non-machine readable format <br />
+        <input type="radio" name="q4" value="3" />No, data is currently not
+        public<br />
+      </div>
+
+      <input
+        type="button"
+        value="Compute Score!"
+        onclick="getQuizScore(this.form)"
+      /><br /><br />
+    </form>
+
+    <script>
+      
+      //-->
+    </script>
+  </body>
+</html>
